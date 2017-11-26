@@ -51,7 +51,7 @@ public class ExpandableExampleFragment extends Fragment
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_recycler_list_view, container, false);
+        return inflater.inflate(R.layout.fragment_personalize_params, container, false);
     }
 
     @Override

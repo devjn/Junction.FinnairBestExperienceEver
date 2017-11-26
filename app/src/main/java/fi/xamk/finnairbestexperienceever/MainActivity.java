@@ -14,7 +14,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String FRAGMENT_LIST_VIEW = "list view";
+    public static final String FRAGMENT_LIST_VIEW = "list view";
 
     ExampleExpandableDataProvider dataProvider;
 
@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new ExpandableExampleFragment(), FRAGMENT_LIST_VIEW)
+                    .add(R.id.container, new MainFragment(), FRAGMENT_LIST_VIEW)
                     .commit();
         }
     }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="@dimen/activity_vertical_margin"
     tools:context="fi.xamk.finnairbestexperienceever.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/fragment_personalize_params">
 
     <TextView
         android:id="@+id/welcome_text"
